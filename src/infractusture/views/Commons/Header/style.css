@@ -1,0 +1,28 @@
+/* Typography */
+/* Font weigth */
+/* Colors */
+.header-container {
+  width: 100%;
+  background: #FFFFFF;
+  height: 119px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-container .logo {
+  width: 25%;
+}
+.header-container .logo img {
+  width: 100%;
+}
+.header-container h2 {
+  font-family: 'Roboto', serif;
+  font-size: 28px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.93;
+  letter-spacing: normal;
+  color: #3e4b54;
+}

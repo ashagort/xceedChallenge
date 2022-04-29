@@ -1,0 +1,46 @@
+@import "./../../../styles/_vars";
+
+
+.LoaderContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: @White;
+    z-index: 11;
+    .flickr-spinner {
+        width: 8em;
+        height: 4em;
+        position: relative;
+        top: 45%;
+        margin: 20px auto;
+        &::before,&::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            border-radius: 50%;
+            animation:
+            move ease-in-out 1s infinite alternate,
+            cover 2s infinite reverse;
+        }
+    
+        &::before{
+            background: @violet; /* blue one */
+            animation-direction: alternate-reverse, normal; /* yay! */
+        }
+        &::after{
+            background: @light_violet; /* pink one */
+        }
+        @keyframes move {
+            to { left: 50%; }
+          }
+          
+          @keyframes cover {
+            from, 49.9% { z-index: 1; }
+            50.1%, to { z-index: 0; }
+          }
+    }    
+}

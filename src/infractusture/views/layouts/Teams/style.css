@@ -1,0 +1,31 @@
+/* Typography */
+/* Font weigth */
+/* Colors */
+.teams-container {
+  margin-bottom: 30px;
+}
+.teams-container .content {
+  background-color: #FFFF;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+.teams-container .content .team-title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', serif;
+  font-size: 28px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.93;
+  letter-spacing: normal;
+  color: #3e4b54;
+}
+.teams-container .content .list-teams {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}

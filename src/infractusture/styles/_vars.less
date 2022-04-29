@@ -1,0 +1,29 @@
+/* Typography */
+@Typography_Roboto: 'Roboto', serif;
+
+/* Font weigth */
+@Thin_100: 100;
+@Light_300: 300;
+@Bold_700: 700;
+@Black_900: 900;
+
+/* Colors */
+@violet: #552ea5;
+@aquamarine: #0ececf;
+@dark_violet: #51495e;
+@light_violet: #7942ED;
+@White: #FFFF;
+
+// Breakpoints
+// ------------------------- Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+~"only screen and (min-device-pixel-ratio: 1.5)";
+@smallMobile:      ~"only screen and (max-width: 479px)";
+@mobile:      ~"only screen and (max-width: 548px)";
+@tablet:      ~"only screen and (min-width: 549px) and (max-width: 948px)";
+@desktop:     ~"only screen and (min-width: 949px) and (max-width: 1127px)";
+@desktop-xl:  ~"only screen and (min-width: 1128px) and (max-width: 1283px)";
+@desktop-xxl:  ~"only screen and (min-width: 1284px)";
+@desktop-xxxl:  ~"only screen and (min-width: 1920px)";
