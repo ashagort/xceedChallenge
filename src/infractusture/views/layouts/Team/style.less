@@ -1,4 +1,7 @@
+@import './src/infractusture/styles/_vars';
+
 .team-container {
+  margin-bottom: 30px;
   .container {
     background-color: #FFFFFF;
     width: 90%;
@@ -8,14 +11,46 @@
     height: 100%;
     border-radius: 10px;
     .team-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      padding: 5px;
+      font-family: @Typography_Roboto;
+      font-size: 20px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: oblique;
+      line-height: 1.3;
+      letter-spacing: normal;
+      color: #46555e;
 
+      img {
+        width: 10%;
+      }
     }
 
     .team-content {
+        font-family: @Typography_Roboto;
 
+      .MuiFormControl-root {
+        .MuiInput-root {
+          background-color: @gray_light;
+          font-family: @Typography_Roboto;
+          border-radius: 17px;
+          border-bottom: 0 solid transparent;
+          padding: 5px;
+
+          &:before {
+            border: none;
+          }
+        }
+      }
 
       .player-rows {
         width: 100%;
+
       }
 
     }

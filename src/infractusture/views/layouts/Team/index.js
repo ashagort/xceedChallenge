@@ -137,7 +137,27 @@ export const Team = ({ currentTeam }) => {
             <img src={currentTeam.crestUrl} alt={currentTeam.shortname} />
           </div>
           <div className={'team-content'}>
-            <Box sx={{ height: 430, width: '100%' }}>
+            <Box sx={{
+              height: 430,
+              width: '100%',
+              border: 0,
+              fontFamily: 'Roboto, serif !important',
+              '& .MuiDataGrid-columnHeaders': {
+                color: '#b6babd',
+                fontFamily: 'Roboto, serif !important',
+                fontSize: '14px',
+                fontWeight: '300',
+                fontStretch: 'normal',
+                fontStyle: 'normal',
+                lineHeight: '1.14',
+                letterSpacing: '1.4px',
+                textTransform: 'capitalize'
+              },
+              '& .MuiDataGrid-cell': {
+                border: 0,
+                fontFamily: 'Roboto, serif !important'
+              }
+            }}>
               <DataGrid
                   pageSize={pageSize}
                   onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
