@@ -1,6 +1,7 @@
 export const caseStoreUse = (repository) => (dispatch) => ({
   getTeams: getTeams(repository, dispatch),
-  getTeam: getTeam(repository, dispatch)
+  getTeam: getTeam(repository, dispatch),
+  returnBack: returnBack(dispatch)
 })
 
 function getTeams (repository, dispatch) {
@@ -24,6 +25,14 @@ function getTeam (repository, dispatch) {
     dispatch({
       type: 'GET_TEAM',
       payload: team
+    })
+  }
+}
+
+function returnBack (dispatch) {
+  return function () {
+    dispatch({
+      type: 'BACK'
     })
   }
 }

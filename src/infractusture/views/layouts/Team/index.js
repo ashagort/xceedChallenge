@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField'
 import { DataGrid } from '@mui/x-data-grid'
 import ClearIcon from '@mui/icons-material/Clear'
 import SearchIcon from '@mui/icons-material/Search'
+import { ReactComponent as ArrowBack } from './../../assets/back-arrow-svgrepo-com.svg'
 
 import './style.css'
 
@@ -65,7 +66,7 @@ QuickSearchToolbar.propTypes = {
   value: PropTypes.string.isRequired
 }
 
-export const Team = ({ currentTeam }) => {
+export const Team = ({ currentTeam, returnBack }) => {
   const agePlayer = (bith) => {
     const today = new Date()
     const bithday = new Date(bith)
@@ -133,6 +134,9 @@ export const Team = ({ currentTeam }) => {
       <div className={'team-container'}>
         <div className={'container'}>
           <div className={'team-title'}>
+            <div className={'back'}>
+                <ArrowBack onClick={() => returnBack()} />
+            </div>
             {currentTeam.name}
             <img src={currentTeam.crestUrl} alt={currentTeam.shortname} />
           </div>

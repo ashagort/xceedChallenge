@@ -7,6 +7,8 @@ export default function ux (state = {}, action) {
       return { ...newState, isLoading: false, stage: 'initialList' }
     case 'GET_TEAM':
       return { ...newState, stage: 'team' }
+    case 'BACK':
+      return { ...newState, stage: 'initialList' }
     default:
       return newState
   }

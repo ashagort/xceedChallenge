@@ -29,6 +29,9 @@
   letter-spacing: normal;
   color: #46555e;
 }
+.team-container .container .team-title .back {
+  cursor: pointer;
+}
 .team-container .container .team-title img {
   width: 10%;
 }

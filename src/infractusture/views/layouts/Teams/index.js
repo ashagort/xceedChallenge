@@ -11,7 +11,12 @@ export const Teams = ({ soccerTeams, getTeam }) => {
   const cardsTeam = () => {
     return soccerTeams.map((team, id) => {
       return (
-          <ImageListItem key={id} >
+          <ImageListItem key={id} sx={{
+            '& .MuiImageListItem-img': {
+              width: '50%',
+              margin: '0 auto'
+            }
+          }} >
               <img
                   src={`${team.crestUrl}?w=248&fit=crop&auto=format`}
                   srcSet={`${team.crestUrl}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -39,7 +44,7 @@ export const Teams = ({ soccerTeams, getTeam }) => {
       <div className={'content'}>
           <div className={'team-title'}>Select a team to see its roster</div>
           <div className={'list-teams'}>
-              <ImageList sx={{ width: 500, height: 450 }}>
+              <ImageList sx={{ width: '100%', height: 450 }} cols={3}>
                   {cardsTeam()}
               </ImageList>
           </div>

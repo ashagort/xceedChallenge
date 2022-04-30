@@ -20,6 +20,7 @@ const App = ({
   /* USECASE */
   getTeams,
   getTeam,
+  returnBack,
   /* MAPState */
   soccerTeams,
   isLoading,
@@ -53,6 +54,7 @@ const App = ({
   if (stage === 'team') {
     component = <Team
         currentTeam={currentTeam}
+        returnBack={returnBack}
     />
   }
 
