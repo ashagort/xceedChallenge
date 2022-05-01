@@ -1,10 +1,12 @@
-## Link DEMO
+## USED TECHNOLOGY
 
-----AQU---
+    React
+    Redux
+    MUI for Componentes simples
 
-# Getting Started with Create React App
+    Jest y React Testing Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    Layered architecture
 
 ## Available Scripts
 
