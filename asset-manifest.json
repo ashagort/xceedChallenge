@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/xceedChallenge/static/css/main.dc8250bc.css",
-    "main.js": "/xceedChallenge/static/js/main.1e131ea4.js",
+    "main.js": "/xceedChallenge/static/js/main.4cb5867b.js",
     "static/media/back-arrow-svgrepo-com.svg": "/xceedChallenge/static/media/back-arrow-svgrepo-com.53678069dbe6b00f72a94cb179a598b6.svg",
     "index.html": "/xceedChallenge/index.html",
     "main.dc8250bc.css.map": "/xceedChallenge/static/css/main.dc8250bc.css.map",
-    "main.1e131ea4.js.map": "/xceedChallenge/static/js/main.1e131ea4.js.map"
+    "main.4cb5867b.js.map": "/xceedChallenge/static/js/main.4cb5867b.js.map"
   },
   "entrypoints": [
     "static/css/main.dc8250bc.css",
-    "static/js/main.1e131ea4.js"
+    "static/js/main.4cb5867b.js"
   ]
 }
