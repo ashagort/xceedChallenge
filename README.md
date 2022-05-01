@@ -1,3 +1,7 @@
+## LINK DEMO
+
+https://ashagort.github.io/xceedChallenge/
+
 ## USED TECHNOLOGY
 
     React
